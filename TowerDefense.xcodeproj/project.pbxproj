@@ -31,6 +31,7 @@
 		EA083E831941A0090097342F /* tankUp.png in Resources */ = {isa = PBXBuildFile; fileRef = EA083E7B1941A0090097342F /* tankUp.png */; };
 		EA083E841941A0090097342F /* tower.png in Resources */ = {isa = PBXBuildFile; fileRef = EA083E7C1941A0090097342F /* tower.png */; };
 		EA083E851941A0090097342F /* towerBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = EA083E7D1941A0090097342F /* towerBackground.png */; };
+		EA083E881941BB840097342F /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = EA083E871941BB840097342F /* Game.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		EA083E7B1941A0090097342F /* tankUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tankUp.png; sourceTree = "<group>"; };
 		EA083E7C1941A0090097342F /* tower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tower.png; sourceTree = "<group>"; };
 		EA083E7D1941A0090097342F /* towerBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = towerBackground.png; sourceTree = "<group>"; };
+		EA083E861941BB840097342F /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		EA083E871941BB840097342F /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 				EA083E4F19419BCB0097342F /* Main.storyboard */,
 				EA083E5219419BCB0097342F /* ViewController.h */,
 				EA083E5319419BCB0097342F /* ViewController.m */,
+				EA083E861941BB840097342F /* Game.h */,
+				EA083E871941BB840097342F /* Game.m */,
 				EA083E5519419BCB0097342F /* Images.xcassets */,
 				EA083E4419419BCA0097342F /* Supporting Files */,
 			);
@@ -292,6 +297,7 @@
 				EA083E5419419BCB0097342F /* ViewController.m in Sources */,
 				EA083E4E19419BCB0097342F /* AppDelegate.m in Sources */,
 				EA083E4A19419BCA0097342F /* main.m in Sources */,
+				EA083E881941BB840097342F /* Game.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
