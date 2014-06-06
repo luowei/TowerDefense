@@ -21,6 +21,16 @@
 		EA083E5F19419BCB0097342F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA083E4119419BCA0097342F /* UIKit.framework */; };
 		EA083E6719419BCB0097342F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA083E6519419BCB0097342F /* InfoPlist.strings */; };
 		EA083E6919419BCB0097342F /* TowerDefenseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA083E6819419BCB0097342F /* TowerDefenseTests.m */; };
+		EA083E7319419F510097342F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EA083E7219419F510097342F /* README.md */; };
+		EA083E7519419FA70097342F /* doc in Resources */ = {isa = PBXBuildFile; fileRef = EA083E7419419FA70097342F /* doc */; };
+		EA083E7E1941A0090097342F /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = EA083E761941A0090097342F /* bullet.png */; };
+		EA083E7F1941A0090097342F /* dangerZone.png in Resources */ = {isa = PBXBuildFile; fileRef = EA083E771941A0090097342F /* dangerZone.png */; };
+		EA083E801941A0090097342F /* mainMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = EA083E781941A0090097342F /* mainMenu.png */; };
+		EA083E811941A0090097342F /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = EA083E791941A0090097342F /* map.png */; };
+		EA083E821941A0090097342F /* tankRight.png in Resources */ = {isa = PBXBuildFile; fileRef = EA083E7A1941A0090097342F /* tankRight.png */; };
+		EA083E831941A0090097342F /* tankUp.png in Resources */ = {isa = PBXBuildFile; fileRef = EA083E7B1941A0090097342F /* tankUp.png */; };
+		EA083E841941A0090097342F /* tower.png in Resources */ = {isa = PBXBuildFile; fileRef = EA083E7C1941A0090097342F /* tower.png */; };
+		EA083E851941A0090097342F /* towerBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = EA083E7D1941A0090097342F /* towerBackground.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +63,16 @@
 		EA083E6419419BCB0097342F /* TowerDefenseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TowerDefenseTests-Info.plist"; sourceTree = "<group>"; };
 		EA083E6619419BCB0097342F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA083E6819419BCB0097342F /* TowerDefenseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TowerDefenseTests.m; sourceTree = "<group>"; };
+		EA083E7219419F510097342F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		EA083E7419419FA70097342F /* doc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = doc; sourceTree = "<group>"; };
+		EA083E761941A0090097342F /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
+		EA083E771941A0090097342F /* dangerZone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dangerZone.png; sourceTree = "<group>"; };
+		EA083E781941A0090097342F /* mainMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainMenu.png; sourceTree = "<group>"; };
+		EA083E791941A0090097342F /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		EA083E7A1941A0090097342F /* tankRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tankRight.png; sourceTree = "<group>"; };
+		EA083E7B1941A0090097342F /* tankUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tankUp.png; sourceTree = "<group>"; };
+		EA083E7C1941A0090097342F /* tower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tower.png; sourceTree = "<group>"; };
+		EA083E7D1941A0090097342F /* towerBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = towerBackground.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +102,12 @@
 		EA083E3119419BCA0097342F = {
 			isa = PBXGroup;
 			children = (
+				EA083E7219419F510097342F /* README.md */,
 				EA083E4319419BCA0097342F /* TowerDefense */,
 				EA083E6219419BCB0097342F /* TowerDefenseTests */,
 				EA083E3C19419BCA0097342F /* Frameworks */,
 				EA083E3B19419BCA0097342F /* Products */,
+				EA083E7419419FA70097342F /* doc */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +148,14 @@
 		EA083E4419419BCA0097342F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EA083E761941A0090097342F /* bullet.png */,
+				EA083E771941A0090097342F /* dangerZone.png */,
+				EA083E781941A0090097342F /* mainMenu.png */,
+				EA083E791941A0090097342F /* map.png */,
+				EA083E7A1941A0090097342F /* tankRight.png */,
+				EA083E7B1941A0090097342F /* tankUp.png */,
+				EA083E7C1941A0090097342F /* tower.png */,
+				EA083E7D1941A0090097342F /* towerBackground.png */,
 				EA083E4519419BCA0097342F /* TowerDefense-Info.plist */,
 				EA083E4619419BCA0097342F /* InfoPlist.strings */,
 				EA083E4919419BCA0097342F /* main.m */,
@@ -228,8 +258,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA083E811941A0090097342F /* map.png in Resources */,
+				EA083E7519419FA70097342F /* doc in Resources */,
+				EA083E801941A0090097342F /* mainMenu.png in Resources */,
+				EA083E831941A0090097342F /* tankUp.png in Resources */,
+				EA083E7E1941A0090097342F /* bullet.png in Resources */,
+				EA083E841941A0090097342F /* tower.png in Resources */,
 				EA083E5619419BCB0097342F /* Images.xcassets in Resources */,
+				EA083E7F1941A0090097342F /* dangerZone.png in Resources */,
 				EA083E4819419BCA0097342F /* InfoPlist.strings in Resources */,
+				EA083E851941A0090097342F /* towerBackground.png in Resources */,
+				EA083E7319419F510097342F /* README.md in Resources */,
+				EA083E821941A0090097342F /* tankRight.png in Resources */,
 				EA083E5119419BCB0097342F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
