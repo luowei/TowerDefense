@@ -18,6 +18,14 @@ BOOL tower3;
 BOOL tower4;
 BOOL tower5;
 
+int tankLivesNumber;
+int levelNumber;
+int bullet1Movment;
+int bullet2Movment;
+int bullet3Movment;
+int bullet4Movment;
+int bullet5Movment;
+
 @interface Game (){
     NSTimer *movement;
 }
@@ -49,9 +57,47 @@ BOOL tower5;
 @property (weak, nonatomic) IBOutlet UIButton *cancelNewTower;
 
 @property (weak, nonatomic) IBOutlet UILabel *credits;
+@property (weak, nonatomic) IBOutlet UILabel *level;
+@property (weak, nonatomic) IBOutlet UILabel *lives;
+@property (weak, nonatomic) IBOutlet UILabel *result;
+@property (weak, nonatomic) IBOutlet UIButton *exit;
+
 @end
 
 @implementation Game
+
+-(void)tankHit{
+    tankLivesNumber -= 1;
+    _lives.text = [NSString stringWithFormat:@"%i",tankLivesNumber];
+    
+    if(tankLivesNumber == 0){
+        _tank.hidden = YES;
+        creditsNumber += 15;
+        _credits.text = [NSString stringWithFormat:@"%i",creditsNumber];
+        _anewTower.hidden = NO;
+        _nextWave.hidden = NO;
+        levelNumber += 1;
+        _tank.center = CGPointMake(-26, 200);
+        [movement invalidate];
+    }
+    if(levelNumber > 5){
+        _result.hidden = NO;
+        _result.text = [NSString stringWithFormat:@"你赢了!"];
+        _exit.hidden = NO;
+        _nextWave.hidden = YES;
+        _anewTower.hidden = YES;
+        [self hiddenTower:YES];
+    }
+}
+
+-(void)gameOver{
+    _result.hidden = NO;
+    _result.text = [NSString stringWithFormat:@"Game Over !"];
+    _exit.hidden = NO;
+    [movement invalidate];
+    _tank.hidden = YES;
+    [self hiddenTower:YES];
+}
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     _tower1DangerZone.hidden = YES;
@@ -212,10 +258,110 @@ BOOL tower5;
     _anewTower.hidden = YES;
     _nextWave.hidden = YES;
     _tank.hidden = NO;
+    movement = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(moving) userInfo:nil repeats:YES];
+    
+    switch (levelNumber) {
+        case 1:
+            tankLivesNumber = 2;
+            break;
+        case 2:
+            tankLivesNumber = 4;
+            break;
+        case 3:
+            tankLivesNumber = 6;
+            break;
+        case 4:
+            tankLivesNumber = 8;
+            break;
+        case 5:
+            tankLivesNumber = 10;	
+            break;
+        default:
+            break;
+    }
+    _lives.text = [NSString stringWithFormat:@"%i",tankLivesNumber];
+    _level.text = [NSString stringWithFormat:@"%i",levelNumber];
 }
 
 - (void)moving{
+    if(_tank.center.x > 600){
+        [self gameOver];
+    }
+    
     _tank.center = CGPointMake(_tank.center.x + tankX, _tank.center.y+tankY);
+    _tower1Bullet.center = CGPointMake(_tower1Bullet.center.x, _tower1Bullet.center.y+bullet1Movment);
+    _tower2Bullet.center = CGPointMake(_tower2Bullet.center.x, _tower2Bullet.center.y+bullet2Movment);
+    _tower3Bullet.center = CGPointMake(_tower3Bullet.center.x+bullet3Movment, _tower3Bullet.center.y);
+    _tower4Bullet.center = CGPointMake(_tower4Bullet.center.x, _tower4Bullet.center.y+bullet4Movment);
+    _tower5Bullet.center = CGPointMake(_tower5Bullet.center.x, _tower5Bullet.center.y+bullet5Movment);
+    
+    if(CGRectIntersectsRect(_tank.frame, _tower1DangerZone.frame) && tower1 == YES){
+        bullet1Movment = -3;
+        _tower1Bullet.hidden = NO;
+    }else{
+        bullet1Movment = 0;
+        _tower1Bullet.hidden = YES;
+        _tower1Bullet.center = CGPointMake(_tower1Space.center.x, _tower1Space.center.y);
+    }
+    if(CGRectIntersectsRect(_tank.frame, _tower2DangerZone.frame) && tower2 == YES){
+        bullet2Movment = 3;
+        _tower2Bullet.hidden = NO;
+    }else{
+        bullet2Movment = 0;
+        _tower2Bullet.hidden = YES;
+        _tower2Bullet.center = CGPointMake(_tower2Space.center.x, _tower2Space.center.y);
+    }
+    if(CGRectIntersectsRect(_tank.frame, _tower3DangerZone.frame) && tower3 == YES){
+        bullet3Movment = -3;
+        _tower3Bullet.hidden = NO;
+    }else{
+        bullet3Movment = 0;
+        _tower3Bullet.hidden = YES;
+        _tower3Bullet.center = CGPointMake(_tower3Space.center.x, _tower3Space.center.y);
+    }
+    if(CGRectIntersectsRect(_tank.frame, _tower4DangerZone.frame) && tower4 == YES){
+        bullet4Movment = 3;
+        _tower4Bullet.hidden = NO;
+    }else{
+        bullet4Movment = 0;
+        _tower4Bullet.hidden = YES;
+        _tower4Bullet.center = CGPointMake(_tower4Space.center.x, _tower4Space.center.y);
+    }
+    if(CGRectIntersectsRect(_tank.frame, _tower5DangerZone.frame) && tower5 == YES){
+        bullet5Movment = -3;
+        _tower5Bullet.hidden = NO;
+    }else{
+        bullet5Movment = 0;
+        _tower5Bullet.hidden = YES;
+        _tower5Bullet.center = CGPointMake(_tower5Space.center.x, _tower5Space.center.y);
+    }
+    
+    if(CGRectIntersectsRect(_tank.frame,_tower1Bullet.frame)){
+        _tower1Bullet.center = CGPointMake(_tower1Space.center.x, _tower1Space.center.y);
+        [self tankHit];
+    }
+    if(CGRectIntersectsRect(_tank.frame,_tower2Bullet.frame)){
+        _tower2Bullet.center = CGPointMake(_tower2Space.center.x, _tower2Space.center.y);
+        [self tankHit];
+    }
+    if(CGRectIntersectsRect(_tank.frame,_tower2Bullet.frame)){
+        _tower2Bullet.center = CGPointMake(_tower2Space.center.x, _tower2Space.center.y);
+        [self tankHit];
+    }
+    if(CGRectIntersectsRect(_tank.frame,_tower3Bullet.frame)){
+        _tower3Bullet.center = CGPointMake(_tower3Space.center.x, _tower3Space.center.y);
+        [self tankHit];
+    }
+    if(CGRectIntersectsRect(_tank.frame,_tower4Bullet.frame)){
+        _tower4Bullet.center = CGPointMake(_tower4Space.center.x, _tower4Space.center.y);
+        [self tankHit];
+    }
+    if(CGRectIntersectsRect(_tank.frame,_tower5Bullet.frame)){
+        _tower5Bullet.center = CGPointMake(_tower5Space.center.x, _tower5Space.center.y);
+        [self tankHit];
+    }
+    
+    
     if(CGRectIntersectsRect(_tank.frame, _corner1.frame)){
         _tank.image = [UIImage imageNamed:@"tankUp.png"];
         tankX = 0;
@@ -282,6 +428,14 @@ BOOL tower5;
     tower5 = NO;
     
     _cancelNewTower.hidden = YES;
+    
+    levelNumber = 1;
+    tankLivesNumber = 2;
+    _level.text = [NSString stringWithFormat:@"%i",levelNumber];
+    _lives.text = [NSString stringWithFormat:@"%i",tankLivesNumber];
+    
+    _result.hidden = YES;
+    _exit.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning
