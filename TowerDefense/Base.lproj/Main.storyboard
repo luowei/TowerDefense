@@ -80,6 +80,132 @@
                                     <action selector="nextWave:" destination="QJC-9x-cvP" eventType="touchUpInside" id="u6E-LF-Byh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="euW-UY-e5M">
+                                <rect key="frame" x="9" y="241" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="towerBackground.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tower1Space:" destination="QJC-9x-cvP" eventType="touchUpInside" id="Otl-M3-kPc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vYb-Is-DlC">
+                                <rect key="frame" x="119" y="97" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="towerBackground.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tower2Space:" destination="QJC-9x-cvP" eventType="touchUpInside" id="oDq-t0-hhH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="u9r-C0-lJs">
+                                <rect key="frame" x="325" y="165" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="towerBackground.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tower3Space:" destination="QJC-9x-cvP" eventType="touchUpInside" id="69b-ca-Krs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IFM-w0-kYj">
+                                <rect key="frame" x="389" y="33" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="towerBackground.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tower4Space:" destination="QJC-9x-cvP" eventType="touchUpInside" id="2vY-nK-dPt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xMl-yS-iku">
+                                <rect key="frame" x="509" y="171" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="towerBackground.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tower5Space:" destination="QJC-9x-cvP" eventType="touchUpInside" id="sje-ib-KBK"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet.png" id="ZJB-hK-9pW">
+                                <rect key="frame" x="138" y="116" width="12" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet.png" id="TV5-1w-FER">
+                                <rect key="frame" x="28" y="260" width="12" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet.png" id="Ano-MG-t6r">
+                                <rect key="frame" x="344" y="184" width="12" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet.png" id="2y6-x4-L0v">
+                                <rect key="frame" x="408" y="52" width="12" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet.png" id="rBO-Uv-Ugb">
+                                <rect key="frame" x="528" y="190" width="12" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dangerZone.png" id="h9w-BH-rC5">
+                                <rect key="frame" x="110" y="97" width="68" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dangerZone.png" id="8oh-sU-roR">
+                                <rect key="frame" x="0.0" y="196" width="68" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dangerZone.png" id="igy-vm-sGD">
+                                <rect key="frame" x="380" y="33" width="68" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dangerZone.png" id="VLh-Xt-LJX">
+                                <rect key="frame" x="500" y="126" width="68" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dangerZone.png" id="1pq-jO-GmH">
+                                <rect key="frame" x="280" y="156" width="95" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wMw-t6-U5l">
+                                <rect key="frame" x="20" y="0.0" width="117" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="建新塔(15积分)">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="newTower:" destination="QJC-9x-cvP" eventType="touchUpInside" id="NZ8-BG-J2T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QiQ-0M-EUS">
+                                <rect key="frame" x="145" y="0.0" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="取消新塔">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelNewTower:" destination="QJC-9x-cvP" eventType="touchUpInside" id="EWv-ll-496"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="得分:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PyJ-Jy-1qO">
+                                <rect key="frame" x="442" y="294" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UlJ-xM-gXd">
+                                <rect key="frame" x="492" y="294" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -87,21 +213,42 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="anewTower" destination="wMw-t6-U5l" id="kVY-Yb-3dh"/>
+                        <outlet property="cancelNewTower" destination="QiQ-0M-EUS" id="1z4-mD-PR9"/>
                         <outlet property="corner1" destination="p9K-dC-5s4" id="eak-rr-gpO"/>
                         <outlet property="corner2" destination="i2u-Ed-o4p" id="AMz-3g-SGY"/>
+                        <outlet property="credits" destination="UlJ-xM-gXd" id="Xex-cb-HfC"/>
                         <outlet property="nextWave" destination="Ygf-zA-NH4" id="adU-mQ-Qi8"/>
                         <outlet property="tank" destination="Z1f-fP-9MT" id="5s6-ua-9Zx"/>
+                        <outlet property="tower1Bullet" destination="TV5-1w-FER" id="8VS-B0-X2y"/>
+                        <outlet property="tower1DangerZone" destination="8oh-sU-roR" id="vca-v6-nBh"/>
+                        <outlet property="tower1Space" destination="euW-UY-e5M" id="0ep-7h-XvH"/>
+                        <outlet property="tower2Bullet" destination="ZJB-hK-9pW" id="J1b-dB-gGV"/>
+                        <outlet property="tower2DangerZone" destination="h9w-BH-rC5" id="ACe-yb-Aq4"/>
+                        <outlet property="tower2Space" destination="vYb-Is-DlC" id="EQd-DN-QLe"/>
+                        <outlet property="tower3Bullet" destination="Ano-MG-t6r" id="FCY-Ed-gXL"/>
+                        <outlet property="tower3DangerZone" destination="1pq-jO-GmH" id="cHS-R0-CcL"/>
+                        <outlet property="tower3Space" destination="u9r-C0-lJs" id="dDE-zj-ChQ"/>
+                        <outlet property="tower4Bullet" destination="2y6-x4-L0v" id="6R5-Qb-Jhu"/>
+                        <outlet property="tower4DangerZone" destination="igy-vm-sGD" id="Uv7-MQ-SF1"/>
+                        <outlet property="tower4Space" destination="IFM-w0-kYj" id="TCA-up-c5u"/>
+                        <outlet property="tower5Bullet" destination="rBO-Uv-Ugb" id="Nzn-M9-98C"/>
+                        <outlet property="tower5DangerZone" destination="VLh-Xt-LJX" id="dvZ-He-ZIb"/>
+                        <outlet property="tower5Space" destination="xMl-yS-iku" id="EiK-vU-gol"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f2s-l7-1MI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="661" y="168"/>
+            <point key="canvasLocation" x="795" y="168"/>
         </scene>
     </scenes>
     <resources>
+        <image name="bullet.png" width="100" height="200"/>
+        <image name="dangerZone.png" width="50" height="50"/>
         <image name="mainMenu.png" width="960" height="541"/>
         <image name="map.png" width="960" height="541"/>
         <image name="tankRight.png" width="183" height="116"/>
+        <image name="towerBackground.png" width="50" height="50"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
